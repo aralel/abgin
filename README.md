@@ -24,7 +24,7 @@ in `Abgin/Screens/LegalView.swift`.
    the pages use the surname only, as aralel.com does.
 2. Put the AdMob publisher ID into `app-ads.txt`, and enter https://abgin.aralel.com as the developer website in
    App Store Connect.
-3. After release: replace "Coming soon to the App Store" with Apple's official badge linking to the app, and add the
+3. After release: replace the TestFlight button (`index.html` hero, public beta link https://testflight.apple.com/join/DgAMh4zm; also in the FAQ on both pages) and "Coming soon to the App Store" with Apple's official badge linking to the app, and add the
    `apple-itunes-app` meta tag.
 
 ## Deploying
