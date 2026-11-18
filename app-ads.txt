@@ -1,0 +1,3 @@
+# Authorised sellers of ad space in Abgin (IAB app-ads.txt). Must be served at the root of the developer website
+# listed in App Store Connect, https://abgin.aralel.com/app-ads.txt. Replace the publisher ID with the AdMob account's.
+google.com, pub-8779587139878169, DIRECT, f08c47fec0942fa0
