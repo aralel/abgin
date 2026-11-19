@@ -10,7 +10,7 @@ no analytics (so no cookie banner is needed).
 | `faq.html` | Questions and answers |
 | `privacy.html`, `terms.html`, `impressum.html` | Legal pages (drafts: see below) |
 | `app-ads.txt` | AdMob authorised sellers; must be at the root of the developer website |
-| `style.css`, `site.js` | Styles; the script only pauses the gameplay video for Reduce Motion |
+| `style.css`, `site.js` | Styles; the script pauses the gameplay video for Reduce Motion, points the header's "Get the app" button at Google Play (Android) or TestFlight (iPhone), and shows the install prompt on phones (closed for 14 days in `localStorage`) |
 | `assets/` | Icon sizes, screenshots, gameplay video and poster, share image, rule illustrations |
 
 ## Before publishing
@@ -24,7 +24,12 @@ in `Abgin/Screens/LegalView.swift`.
    the pages use the surname only, as aralel.com does.
 2. Put the AdMob publisher ID into `app-ads.txt`, and enter https://abgin.aralel.com as the developer website in
    App Store Connect.
-3. After release: replace the TestFlight button (`index.html` hero, public beta link https://testflight.apple.com/join/DgAMh4zm; also in the FAQ on both pages) and "Coming soon to the App Store" with Apple's official badge linking to the app, and add the
+3. Android is live on Google Play (https://play.google.com/store/apps/details?id=com.aralel.abgin): primary button in the
+   `index.html` hero and links in the "Which devices" answers on both pages. If Play Games is turned on later, add a Play
+   Games section to `privacy.html` (as in the in-app text, `android/app/src/main/res/values/legal.xml`).
+4. Store links appear in four places: the hero badges in `index.html`, the footer badges on every page, and `iPhoneUrl` /
+   `playStoreUrl` in `site.js` (header button and install prompt). After the iOS release, change all of them and the prompt text.
+5. After iOS release: replace the TestFlight button (`index.html` hero, public beta link https://testflight.apple.com/join/DgAMh4zm; also in the FAQ on both pages) and "Coming soon to the App Store" with Apple's official badge linking to the app, and add the
    `apple-itunes-app` meta tag.
 
 ## Deploying
