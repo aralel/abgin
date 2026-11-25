@@ -13,6 +13,8 @@ no analytics (so no cookie banner is needed).
 | `style.css`, `site.js` | Styles; the script pauses the gameplay video for Reduce Motion, points the header's "Get the app" button at Google Play (Android) or TestFlight (iPhone), and shows the install prompt on phones (closed for 14 days in `localStorage`) |
 | `assets/` | Icon sizes, screenshots, gameplay video and poster, share image, rule illustrations |
 
+The screenshots, video, share image and rule illustrations come from the iOS app and the store images: see `ios/Design/StoreImages/README.md` and the `render-demos` command in `CHANGELOG.md`.
+
 ## Before publishing
 
 The company details come from Aralel's legal notice (aralel.com/impressum_en.html): Josefstr. 66, 52080 Aachen,

@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-11-25 (the new graphics)
+
+- All pictures show the new look: the girl and the boy (faces drawn after reference photos) and the raised game buttons. New `assets/screen-home|play|chapters|daily|help.jpg` (590 × 1282) from fresh iPhone captures; new `assets/gameplay.mp4` (Still water 1 solved in 11 swipes, 29 s, 300 KB, the walking at real speed with idle gaps cut) and `gameplay-poster.jpg`; new `assets/og-image.png` (1200 × 630, the share image) from the App Store header.
+- The seven rule illustrations (`assets/demo-*.svg`) are regenerated with `mirror-solver render-demos` (run from `ios/`: `swift run --package-path MirrorKit mirror-solver render-demos ../website/assets`); the generator now draws the girl and boy (small embedded pictures from `ios/Design/StoreImages/characters/`) instead of the amber circle and teal diamond.
+- Texts: "amber circle" and "teal diamond" became "the girl" and "the boy" on the home page, the How to play page (rules and picture descriptions) and the FAQ; new lines say they walk from cell to cell, bang their heads on walls and parachute back after a fall; the accessibility answer now says the two differ in looks and build. Picture descriptions mention the new buttons.
+- Not changed: the app icon (`icon-512.png`, favicons) is still the old circle and diamond, because the app's icon has not changed.
+
+## 2026-11-22 (Game Center)
+
+- Privacy policy (version 22 November 2026): new "Game Center (iPhone)" section: total level stars and daily streak go to Apple's Game Center leaderboards when signed in, the Game Center player ID is kept with the progress, Apple's privacy policy applies. The same text is in the app's Legal screen.
+
 ## 2026-11-19 (store logos, download links, install prompt)
 
 - Store links are now badges with the store logos as inline SVG (four-colour Google Play triangle, Apple logo): "Get it on Google Play" and "iPhone beta on TestFlight", in the home page hero and in the footer of every page.
